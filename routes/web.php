@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::resource('kontak','Kontak'); //tambahkan baris ini
+
+Route::get('/halaman-kedua', function () {
+    return view('halamandua');
+});
+Route::get('foo', function () {
+    return 'Hello World';
 });
